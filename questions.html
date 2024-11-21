@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>PHQ-9 Questions</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Mental Health Survey</h1>
+    </header>
+    <main>
+        <div id="question-container">
+            <h2 id="question-title">Question 1</h2>
+            <p id="question-text">Over the last two weeks, how often have you been bothered by any of the following problems?</p>
+            <p>Little interest or pleasure in doing things</p>
+            <form id="question-form">
+                <label>
+                    <input type="radio" name="response" value="0"> Not at all
+                </label><br>
+                <label>
+                    <input type="radio" name="response" value="1"> Several days
+                </label><br>
+                <label>
+                    <input type="radio" name="response" value="2"> More than half the days
+                </label><br>
+                <label>
+                    <input type="radio" name="response" value="3"> Nearly every day
+                </label><br>
+                <button type="button" onclick="nextQuestion()">Next</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Your progress: <span id="progress">0%</span></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
